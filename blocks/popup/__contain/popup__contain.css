@@ -1,0 +1,6 @@
+.popup__contain {
+    max-width: 80vw;
+    max-height: 80vh;
+    background-size: cover;
+    position: relative;
+  }

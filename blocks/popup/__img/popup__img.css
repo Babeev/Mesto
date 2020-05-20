@@ -1,0 +1,9 @@
+.popup__img {
+  display: flex;
+  max-width: 80vw;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  background-size: cover;
+  position: relative;
+}

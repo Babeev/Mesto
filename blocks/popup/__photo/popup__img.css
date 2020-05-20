@@ -1,0 +1,8 @@
+.popup__img {
+  max-width: 80vw;
+  max-height: 80vh;
+  padding: 0;
+  border-radius: 0;
+  background-image: cover;
+  z-index: 1;
+}
