@@ -1,4 +1,4 @@
-class Listen {
+export class Listen {
   constructor(thisClass) {
     this.thisClass = thisClass;
   }

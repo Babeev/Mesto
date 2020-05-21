@@ -1,5 +1,12 @@
 'use strict';
 import "../pages/index.css";
+import {API} from "./API.js";
+import {Card} from "./Card.js";
+import {CardList} from "./CardList.js";
+import {Popup} from "./Popup.js";
+import {UserInfo} from "./UserInfo.js";
+import {FormValidator} from "./FormValidator.js";
+import {Listen} from "./Listen.js";
 const placesList = document.querySelector('.places-list');
 const popupPlace = document.querySelector('.place');
 const popupEdit = document.querySelector('.edit');

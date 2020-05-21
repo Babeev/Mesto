@@ -1,4 +1,4 @@
-class API {
+export class API {
   constructor(array) {
     this.address = array.baseUrl;
     this.token = array.headers.authorization;
