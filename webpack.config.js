@@ -28,13 +28,22 @@ module.exports = {
             ] 
             },
             {
-            test: /\.(png|jpg|gif|ico|svg)$/,
-            use: [
-                'file-loader?name=../images/[name].[ext]', // указали папку, куда складывать изображения
-                {
-                    loader: 'image-webpack-loader',
-                    options: {}
+            test: /\.(png|jpg|gif|ico|svg)$/i,
+            use: [{
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]',
+                    publicPath: 'img',
+                    outputPath: 'img',
+                    useRelativePath: true,
+                    esModule: false,
+                    }
                 },
+                  {
+                    loader: 'image-webpack-loader',
+                    options: {
+                    }
+                  }
                 ]
             },
             {
