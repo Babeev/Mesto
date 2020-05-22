@@ -1,5 +1,12 @@
-
 'use strict';
+import "./index.css";
+import {API} from "./script/API.js";
+import {Card} from "./script/Card.js";
+import {CardList} from "./script/CardList.js";
+import {Popup} from "./script/Popup.js";
+import {UserInfo} from "./script/UserInfo.js";
+import {FormValidator} from "./script/FormValidator.js";
+import {Listen} from "./script/Listen.js";
 const placesList = document.querySelector('.places-list');
 const popupPlace = document.querySelector('.place');
 const popupEdit = document.querySelector('.edit');
@@ -37,7 +44,7 @@ const clearvalidEdit = new Listen(validEdit);
 const apiClass = new API({
   baseUrl: 'https://praktikum.tk/cohort10',
   headers: {
-    authorization: '',
+    authorization: '1c89954d-9b30-48ff-be4d-8a0ee0f6f716',
     'Content-Type': 'application/json'
   }
 });
