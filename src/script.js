@@ -42,7 +42,7 @@ const clearvalidEdit = new Listen(validEdit);
 // Можно лучше
 // Даные для соединения лучше вынести в отдельные переменные, так их проще будет редактировать
 const apiClass = new API({
-  baseUrl: 'https://praktikum.tk/cohort10',
+  baseUrl: 'https://nomoreparties.co/cohort10',
   headers: {
     authorization: '1c89954d-9b30-48ff-be4d-8a0ee0f6f716',
     'Content-Type': 'application/json'
