@@ -1,12 +1,13 @@
 'use strict';
 import "./index.css";
-import {API} from "./script/API.js";
-import {Card} from "./script/Card.js";
-import {CardList} from "./script/CardList.js";
-import {Popup} from "./script/Popup.js";
-import {UserInfo} from "./script/UserInfo.js";
-import {FormValidator} from "./script/FormValidator.js";
-import {Listen} from "./script/Listen.js";
+import { API } from "./script/API.js";
+import { Card } from "./script/Card.js";
+import { CardList } from "./script/CardList.js";
+import { Popup } from "./script/Popup.js";
+import { UserInfo } from "./script/UserInfo.js";
+import { FormValidator } from "./script/FormValidator.js";
+import { Listen } from "./script/Listen.js";
+
 const placesList = document.querySelector('.places-list');
 const popupPlace = document.querySelector('.place');
 const popupEdit = document.querySelector('.edit');
@@ -121,3 +122,11 @@ listenEdit.openClose(buttonCloseEdit);
 listenPhoto.openClose(buttonClosePhoto);
 clearvalidPlace.popupClear(buttonPlace, formAdd, false);
 clearvalidEdit.popupClear(buttonEdit, formEdit, true);
+
+placesList.addEventListener('click', (e) => {
+  const target = e.target;
+  console.log(target)
+  if (e.target.classList.contains('place-card__like-icon')) {
+    target.classList.toggle('place-card__like-icon_liked')
+  }
+})

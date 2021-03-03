@@ -42,8 +42,6 @@ export class Card {
   }
 
   listeners() {
-    this.buttonLike
-      .addEventListener('click', this.like);
     this.buttonDelete
       .addEventListener('click', this.handlerDelete);
 
@@ -53,9 +51,6 @@ export class Card {
 
   handlerDelete(event) {
     event.preventDefault();
-
-    this.buttonLike
-      .removeEventListener('click', this.like);
 
     this.buttonDelete
       .removeEventListener('click', this.handlerDelete);
@@ -69,10 +64,6 @@ export class Card {
   handlerOpenPhoto() {
     this.popupOpen.openClose();
     this.popupImg.src = this.link;
-  }
-
-  like(event) {
-    event.target.classList.toggle('place-card__like-icon_liked');
   }
 
   remove() {
